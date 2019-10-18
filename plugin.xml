@@ -17,9 +17,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <engines>
         <engine name="cordova" version=">=7.1.0"/>
         <engine name="cordova-android" version=">=7.0.0"/>
-        <engine name="cordova-ios" version=">=4.3.0"/>
+        <!--<engine name="cordova-ios" version=">=4.3.0"/>-->
     </engines>
-
+<!-- no-op'ing ios - Android only
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="Idfa">
@@ -32,7 +32,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <framework src="AdSupport.framework" weak="true" />
     </platform>
-
+-->
     <platform name="android">
         <preference name="GOOGLE_SERVICES_VERSION" default="15.0.+"/>
 
